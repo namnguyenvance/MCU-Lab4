@@ -1,0 +1,11 @@
+main.c:59:6:task_0	8	static
+main.c:62:6:task_1	8	static
+main.c:66:6:task_2	8	static
+main.c:70:6:task_3	8	static
+main.c:74:6:task_4	8	static
+main.c:84:5:main	8	static
+main.c:136:6:SystemClock_Config	72	static
+main.c:172:13:MX_TIM2_Init	32	static
+main.c:217:13:MX_GPIO_Init	32	static
+main.c:240:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:249:6:Error_Handler	4	static,ignoring_inline_asm
