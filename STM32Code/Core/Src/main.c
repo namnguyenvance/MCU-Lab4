@@ -74,7 +74,9 @@ void task_3(void) {
 void task_4(void) {
 	HAL_GPIO_TogglePin(LED_4_GPIO_Port, LED_4_Pin);
 }
-
+void LEDInit(void) {
+	HAL_GPIO_WritePin(GPIOA, LED_0_Pin | LED_1_Pin | LED_2_Pin | LED_3_Pin | LED_4_Pin, 1);
+}
 /* USER CODE END 0 */
 
 /**
@@ -113,6 +115,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   SCH_Init();
+  LEDInit();
   // Base tasks
   SCH_Add_Task(task_0, 0, 500);
   SCH_Add_Task(task_1, 1, 1000);
